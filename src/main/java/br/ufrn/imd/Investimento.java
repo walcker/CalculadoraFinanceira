@@ -1,6 +1,6 @@
 package br.ufrn.imd;
 
-public class Investimento {
+public abstract class Investimento {
 
     public double valorInicial;
     public double valorMensal;
