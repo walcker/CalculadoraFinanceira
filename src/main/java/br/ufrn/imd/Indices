@@ -1,0 +1,15 @@
+package br.ufrn.imd;
+
+public enum Indices {
+    POUPANCA(6.0), PREFIXADO(12.48), SELIC(12.75), IPCA(8.28), CDI(13.15);
+
+    private double taxa;
+
+    Indices(double taxa) {
+        this.taxa = taxa;
+    }
+
+    public double getTaxa() {
+        return taxa;
+    }
+}
