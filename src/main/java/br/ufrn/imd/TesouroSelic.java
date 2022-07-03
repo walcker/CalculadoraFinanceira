@@ -2,7 +2,7 @@ package br.ufrn.imd;
 
 public class TesouroSelic extends Investimento{
 
-    public double Selic = 11.45;
+    public double Selic = 12.75;
 
     /**
      * @param Selic rentabilidade do tesouro Selic
