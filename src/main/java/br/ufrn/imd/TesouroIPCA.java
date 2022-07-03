@@ -2,7 +2,7 @@ package br.ufrn.imd;
 
 public class TesouroIPCA extends Investimento{
 
-    public double IPCA = 10.45;
+    public double IPCA = 8.28;
 
     /**
      * @param IPCA rentabilidade do tesouro IPCA
