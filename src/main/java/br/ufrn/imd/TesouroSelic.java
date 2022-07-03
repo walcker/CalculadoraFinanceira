@@ -2,11 +2,17 @@ package br.ufrn.imd;
 
 public class TesouroSelic extends Investimento{
 
-    public double rentabilidadeLiquidaAno;
+    public double Selic = 11.45;
 
-    public double calcular(double rentabilidadeLiquidaAno, double valorInicial){
+    /**
+     * @param Selic rentabilidade do tesouro Selic
+     * @param valorInicial valor inicial investido
+     * @return valor final do investimento
+     */
+    @Override
+    public double calcular(double Selic, double valorInicial){
 
-        return (rentabilidadeLiquidaAno/100 * valorInicial) * (int) (qntMeses/12) + valorInicial;
+        return (Selic/100 * valorInicial) * (float) (qntMeses/12) + valorInicial;
     }
 
 }
