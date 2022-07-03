@@ -2,11 +2,17 @@ package br.ufrn.imd;
 
 public class TesouroIPCA extends Investimento{
 
-    public double IPCA;
+    public double IPCA = 10.45;
 
+    /**
+     * @param IPCA rentabilidade do tesouro IPCA
+     * @param valorInicial valor inicial investido
+     * @return valor final do investimento
+     */
+    @Override
     public double calcular(double IPCA, double valorInicial){
-
-        return ((IPCA + 5.8)/100 * valorInicial) * (int) (qntMeses/12) + valorInicial;
+        double prefix = 5.72;
+        return (IPCA + prefix) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial;
     }
 
 }
