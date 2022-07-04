@@ -11,7 +11,7 @@ public class CDBeLC extends Investimento{
      */
     @Override
     public double calcular(double CDBLC, double valorInicial) {
-        return (CDBLC) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial;
+        return ((CDBLC) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial+valorMensal*(qntMeses-1));
     }
 
 }

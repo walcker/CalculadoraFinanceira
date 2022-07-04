@@ -11,7 +11,7 @@ public class Poupanca extends Investimento {
      */
     @Override
     public double calcular(double Poupanca, double valorInicial) {
-        return (Poupanca) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial;
+        return ((Poupanca) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial) + valorMensal * (qntMeses - 1);
     }
 
 }

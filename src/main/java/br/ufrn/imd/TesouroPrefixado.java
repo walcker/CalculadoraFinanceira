@@ -11,7 +11,7 @@ public class TesouroPrefixado extends Investimento {
      */
     @Override
     public double calcular(double prefixado, double valorInicial){
-        return (prefixado/100 * valorInicial) * (float) (qntMeses/12) + valorInicial;
+        return ((prefixado/100 * valorInicial) * (float) (qntMeses/12) + valorInicial+valorMensal*(qntMeses-1));
     }
 
 }

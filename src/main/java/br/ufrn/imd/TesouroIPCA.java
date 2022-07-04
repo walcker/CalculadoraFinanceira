@@ -12,7 +12,7 @@ public class TesouroIPCA extends Investimento{
     @Override
     public double calcular(double IPCA, double valorInicial){
         double prefix = 5.72;
-        return (IPCA + prefix) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial;
+        return ((IPCA + prefix) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial) + valorMensal * (qntMeses - 1);
     }
 
 }

@@ -12,7 +12,7 @@ public class TesouroSelic extends Investimento{
     @Override
     public double calcular(double Selic, double valorInicial){
 
-        return (Selic/100 * valorInicial) * (float) (qntMeses/12) + valorInicial;
+        return ((Selic/100 * valorInicial) * (float) (qntMeses/12) + valorInicial)+valorMensal*(qntMeses-1);
     }
 
 }
