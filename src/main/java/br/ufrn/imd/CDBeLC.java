@@ -5,7 +5,7 @@ public class CDBeLC extends Investimento{
     public double CDBeLC = taxaCDI * 1.27;
 
     /**
-     * @param CDBLC rentabilidade 124% da CDI
+     * @param CDBLC rentabilidade 127% da CDI
      * @param valorInicial valor inicial investido
      * @return valor final do investimento
      */
