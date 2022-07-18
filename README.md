@@ -26,7 +26,8 @@ Os valores utilizados para os cálculos são:
 | CDB e LC  | 127            | CDI        |
 > Índices obtidos em maio de 2022, com IPCA atualizado junho de 2022;
 
-
+O respectivo diagrama:
+![diagram](https://user-images.githubusercontent.com/101530066/179432793-ca41edf8-addd-4771-be76-ec492fe7224f.png)
 
 ### Integrantes do grupo
 
