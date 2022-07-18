@@ -32,6 +32,6 @@ Os valores utilizados para os cálculos são:
 
 1 - **Jamerson Lucas** - **Matrícula:** **20190039156**
 
-2 - **Nathan Martes** - **Matrícula:** **20190002862**
+2 - **Nathan Martes** - **Matrícula:** **20190002862** (nmpo)
 
-3 - **Walcker Gomes** - **Matrícula:** **20180117849**
+3 - **Walcker Gomes** - **Matrícula:** **20180117849** (walcker)
