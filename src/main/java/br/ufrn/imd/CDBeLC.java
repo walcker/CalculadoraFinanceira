@@ -2,7 +2,7 @@ package br.ufrn.imd;
 
 public class CDBeLC extends Investimento{
     public double taxaCDI = 13.15;
-    public double CDBeLC = taxaCDI * 1.27;
+
 
     /**
      * @param CDBLC rentabilidade 127% da CDI
@@ -17,6 +17,7 @@ public class CDBeLC extends Investimento{
         this.valorInicial = valorInicial;
         this.valorMensal = valorMensal;
         this.qntMeses = quantidadeMeses;
+        this.indice = this.taxaCDI * 1.27; //CDBeLC
     }
     @Override
     public double calcular(double CDBLC, double valorInicial) {

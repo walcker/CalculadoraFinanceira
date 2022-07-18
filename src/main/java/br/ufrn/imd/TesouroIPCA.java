@@ -2,7 +2,6 @@ package br.ufrn.imd;
 
 public class TesouroIPCA extends Investimento{
 
-    public double IPCA = 8.28;
 
     /**
      * @param IPCA rentabilidade do tesouro IPCA
@@ -18,6 +17,7 @@ public class TesouroIPCA extends Investimento{
         this.valorInicial = valorInicial;
         this.valorMensal = valorMensal;
         this.qntMeses = quantidadeMeses;
+        this.indice = 8.28; //IPCA
     }
     @Override
     public double calcular(double IPCA, double valorInicial){
