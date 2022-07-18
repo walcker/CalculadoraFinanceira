@@ -11,6 +11,14 @@ public class CDBeLC extends Investimento{
      */
     @Override
     public double calcular(double CDBLC, double valorInicial) {
+        double result = 0.0;
+        try {
+            if (valorInicial <= 0) {
+                throw new IllegalArgumentException("Valor inicial deve ser maior que zero.");
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
         return ((CDBLC) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial+valorMensal*(qntMeses-1));
     }
 
