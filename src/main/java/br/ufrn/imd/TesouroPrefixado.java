@@ -9,6 +9,16 @@ public class TesouroPrefixado extends Investimento {
      * @param valorInicial valor inicial investido
      * @return valor final do investimento
      */
+
+    public TesouroPrefixado(){
+
+    }
+
+    public TesouroPrefixado(double valorInicial, double valorMensal, int quantidadeMeses){
+        this.valorInicial = valorInicial;
+        this.valorMensal = valorMensal;
+        this.qntMeses = quantidadeMeses;
+    }
     @Override
     public double calcular(double prefixado, double valorInicial){
         try {

@@ -9,6 +9,16 @@ public class TesouroIPCA extends Investimento{
      * @param valorInicial valor inicial investido
      * @return valor final do investimento
      */
+
+    public TesouroIPCA(){
+
+    }
+
+    public TesouroIPCA(double valorInicial, double valorMensal, int quantidadeMeses){
+        this.valorInicial = valorInicial;
+        this.valorMensal = valorMensal;
+        this.qntMeses = quantidadeMeses;
+    }
     @Override
     public double calcular(double IPCA, double valorInicial){
         double prefix = 5.72;

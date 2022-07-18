@@ -4,30 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        TesouroSelic selic = new TesouroSelic();
-        selic.valorInicial = 5000;
-        selic.valorMensal = 200;
-        selic.qntMeses = 60;
+        TesouroSelic selic = new TesouroSelic(5000, 200, 60);
 
-        TesouroIPCA ipca = new TesouroIPCA();
-        ipca.valorInicial = 5000;
-        ipca.valorMensal = 200;
-        ipca.qntMeses = 60;
+        TesouroIPCA ipca = new TesouroIPCA(5000, 200, 60);
 
-        TesouroPrefixado pref = new TesouroPrefixado();
-        pref.valorInicial = 5000;
-        pref.valorMensal = 200;
-        pref.qntMeses = 60;
+        TesouroPrefixado pref = new TesouroPrefixado(5000, 200, 60);
 
-        Poupanca poupanca = new Poupanca();
-        poupanca.valorInicial = 5000;
-        poupanca.valorMensal = 200;
-        poupanca.qntMeses = 60;
+        Poupanca poupanca = new Poupanca(5000, 200, 60);
 
-        CDBeLC cdblc = new CDBeLC();
-        cdblc.valorInicial = 5000;
-        cdblc.valorMensal = 200;
-        cdblc.qntMeses = 60;
+        CDBeLC cdblc = new CDBeLC(5000, 200, 60);
 
         System.out.println("Resgate do investimento de R$ " + selic.valorInicial + " no Tesouro Selic com rendimento de " + selic.Selic + "% a.a..");
         System.out.println(selic.calcular(selic.Selic, selic.valorInicial));

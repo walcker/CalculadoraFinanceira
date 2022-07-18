@@ -9,6 +9,15 @@ public class TesouroSelic extends Investimento{
      * @param valorInicial valor inicial investido
      * @return valor final do investimento
      */
+
+    public TesouroSelic(){
+
+    }
+    public TesouroSelic(double valorInicial, double valorMensal, int quantidadeMeses){
+        this.valorInicial = valorInicial;
+        this.valorMensal = valorMensal;
+        this.qntMeses = quantidadeMeses;
+    }
     @Override
     public double calcular(double Selic, double valorInicial){
         try {
