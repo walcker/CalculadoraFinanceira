@@ -12,7 +12,15 @@ public class TesouroIPCA extends Investimento{
     @Override
     public double calcular(double IPCA, double valorInicial){
         double prefix = 5.72;
+        try {
+            if (valorInicial <= 0) {
+                throw new IllegalArgumentException("Valor inicial deve ser maior que zero.");
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
         return ((IPCA + prefix) / 100 * valorInicial * (float) (qntMeses / 12) + valorInicial) + valorMensal * (qntMeses - 1);
     }
 
 }
+
