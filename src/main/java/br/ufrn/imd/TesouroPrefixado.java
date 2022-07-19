@@ -2,6 +2,12 @@ package br.ufrn.imd;
 
 public class TesouroPrefixado extends Investimento {
 
+    public TesouroPrefixado(double valorInicial, double valorMensal, int quantidadeMeses){
+        this.valorInicial = valorInicial;
+        this.valorMensal = valorMensal;
+        this.qntMeses = quantidadeMeses;
+        this.indice = 12.48; //o indice representa a rentabilidade do tesouro prefixado
+    }
 
     /**
      * @param prefixado rentabilidade do tesouro prefixado
@@ -9,16 +15,7 @@ public class TesouroPrefixado extends Investimento {
      * @return valor final do investimento
      */
 
-    public TesouroPrefixado(){
 
-    }
-
-    public TesouroPrefixado(double valorInicial, double valorMensal, int quantidadeMeses){
-        this.valorInicial = valorInicial;
-        this.valorMensal = valorMensal;
-        this.qntMeses = quantidadeMeses;
-        this.indice = 12.48;
-    }
     @Override
     public double calcular(double prefixado, double valorInicial){
         try {

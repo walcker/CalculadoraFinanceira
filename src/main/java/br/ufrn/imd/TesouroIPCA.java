@@ -2,6 +2,12 @@ package br.ufrn.imd;
 
 public class TesouroIPCA extends Investimento{
 
+    public TesouroIPCA(double valorInicial, double valorMensal, int quantidadeMeses){
+        this.valorInicial = valorInicial;
+        this.valorMensal = valorMensal;
+        this.qntMeses = quantidadeMeses;
+        this.indice = 8.28; //o indice representa a rentabilidade do tesouro IPCA
+    }
 
     /**
      * @param IPCA rentabilidade do tesouro IPCA
@@ -9,16 +15,7 @@ public class TesouroIPCA extends Investimento{
      * @return valor final do investimento
      */
 
-    public TesouroIPCA(){
 
-    }
-
-    public TesouroIPCA(double valorInicial, double valorMensal, int quantidadeMeses){
-        this.valorInicial = valorInicial;
-        this.valorMensal = valorMensal;
-        this.qntMeses = quantidadeMeses;
-        this.indice = 8.28; //IPCA
-    }
     @Override
     public double calcular(double IPCA, double valorInicial){
         double prefix = 5.72;
