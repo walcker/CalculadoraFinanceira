@@ -27,7 +27,7 @@ Os valores utilizados para os cálculos são:
 > Índices obtidos em maio de 2022, com IPCA atualizado junho de 2022;
 
 O respectivo diagrama:
-![ClassDiagramCalculadoraFinanceira](https://user-images.githubusercontent.com/88634237/179732284-a9304fba-359a-4cde-a0a0-8b441d82dc4a.png)
+![ClassDiagram](https://user-images.githubusercontent.com/88634237/180175864-aa912abf-45ee-4fa1-a0a8-f542a79d48e6.png)
 
 ### Integrantes do grupo
 
