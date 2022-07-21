@@ -2,6 +2,9 @@ package br.ufrn.imd;
 
 public class Poupanca extends Investimento {
 
+    public Poupanca(){
+        this.indice = 6.00; //o indice representa a rentabilidade na Poupanca
+    }
     public Poupanca(double valorInicial, double valorMensal, int quantidadeMeses){
         this.valorInicial = valorInicial;
         this.valorMensal = valorMensal;

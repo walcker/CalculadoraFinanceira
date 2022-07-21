@@ -2,6 +2,9 @@ package br.ufrn.imd;
 
 public class TesouroPrefixado extends Investimento {
 
+    public TesouroPrefixado(){
+        this.indice = 12.48; //o indice representa a rentabilidade do tesouro prefixado
+    }
     public TesouroPrefixado(double valorInicial, double valorMensal, int quantidadeMeses){
         this.valorInicial = valorInicial;
         this.valorMensal = valorMensal;

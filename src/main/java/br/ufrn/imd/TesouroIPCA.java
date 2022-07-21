@@ -2,6 +2,9 @@ package br.ufrn.imd;
 
 public class TesouroIPCA extends Investimento{
 
+    public TesouroIPCA(){
+        this.indice = 8.28; //o indice representa a rentabilidade do tesouro IPCA
+    }
     public TesouroIPCA(double valorInicial, double valorMensal, int quantidadeMeses){
         this.valorInicial = valorInicial;
         this.valorMensal = valorMensal;

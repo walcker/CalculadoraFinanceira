@@ -3,6 +3,10 @@ package br.ufrn.imd;
 public class CDBeLC extends Investimento{
     public double taxaCDI = 13.15;
 
+    public CDBeLC(){
+        this.indice = this.taxaCDI * 1.27; //o indice representa o CDBeLC (rentabilidade de 127% da CDI)
+    }
+
     public CDBeLC(double valorInicial, double valorMensal, int quantidadeMeses){
         this.valorInicial = valorInicial;
         this.valorMensal = valorMensal;

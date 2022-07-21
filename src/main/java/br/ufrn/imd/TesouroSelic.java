@@ -2,6 +2,9 @@ package br.ufrn.imd;
 
 public class TesouroSelic extends Investimento{
 
+    public TesouroSelic(){
+        this.indice = 12.75; //o indice representa a rentabilidade do tesouro Selic
+    }
     public TesouroSelic(double valorInicial, double valorMensal, int quantidadeMeses){
         this.valorInicial = valorInicial;
         this.valorMensal = valorMensal;

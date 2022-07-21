@@ -1,25 +1,43 @@
 package br.ufrn.imd;
 
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        CalcularInvestimento calculadora = new CalcularInvestimento();
 
-        TesouroSelic selic = new TesouroSelic(5000, 200, 60);
-        TesouroIPCA ipca = new TesouroIPCA(5000, 200, 60);
-        TesouroPrefixado pref = new TesouroPrefixado(5000, 200, 60);
-        Poupanca poupanca = new Poupanca(5000, 200, 60);
-        CDBeLC cdblc = new CDBeLC(5000, 200, 60);
+        List<Investimento> investimentos = new ArrayList<>();
 
-        calculadora.imprimirInvestimento(selic);
+        investimentos.add(new Poupanca());
+        investimentos.add(new TesouroSelic());
+        investimentos.add(new TesouroIPCA());
+        investimentos.add(new TesouroPrefixado());
+        investimentos.add(new CDBeLC());
 
-        calculadora.imprimirInvestimento(ipca);
+        Scanner scan = new Scanner(System.in);
+        int opcao;
 
-        calculadora.imprimirInvestimento(pref);
+        try {
+            //entra em um loop infinito até que o usuario resolva sair do programa
+            do {
+                Menu.mostrarMenu(); //mostra informacoes do menu na tela
+                opcao = scan.nextInt();
 
-        calculadora.imprimirInvestimento(poupanca);
-
-        calculadora.imprimirInvestimento(cdblc);
+                switch (opcao) {
+                    case 0, 1, 2, 3, 4, 5 -> Operacoes.operar(investimentos, scan, opcao);
+                    case 6 -> System.out.println("Fim do programa!");
+                    default -> System.out.println("Opcao invalida!");
+                }
+            }while (opcao != 6);
+        }catch (InputMismatchException e){ //erro disparado após o usuario entrar com tipos de dados diferentes do pedido
+            System.out.println("Erro: Entrada invalida!");
+        }finally {
+            scan.close();
+        }
 
     }
+
 }
